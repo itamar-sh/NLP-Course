@@ -1,4 +1,4 @@
-# NLP-Course
+# NLP Course
 Natural Language Processing Course in HUJi. From Basic to advance models. Solving: Classification, Word Embedding, Sentiment Analysis, Information Extraction, Semantic Role Labeling, Machine Translation, Pretraining and Transformers.
 
 
@@ -37,3 +37,12 @@ For the feature function components based on Words bigrams, we have a feature (v
 For the feature function components based on POS tags bigrams, we use the part of speech tags given in the testset (save us running a POS tagger).
 The scoring function is defined to be the dot product of the feature function by a weight vector w.
 For Inference (computing the MST), we use the our modified version (max instead of min) of Chu-Liu-Edmonds algorithm.
+
+
+## Pretraining and Transformers
+Solving classification tasks via 3 different ways with 3 different portions of the dataset.
+First model: Logistic Regression model using normalized Bag-of-Words representation.
+Second model: Finetune a Transformer model with a SequenceClassification head and an appropriate tokenizer.
+Third model: Run zero-shot classification for this task using a pretrained model.
+
+Using scikit-learn and transformers from huggingface.
