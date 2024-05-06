@@ -2,15 +2,15 @@
 Natural Language Processing Course in HUJi. From Basic to advance models. Solving: Classification, Word Embedding, Sentiment Analysis, Information Extraction, Semantic Role Labeling, Machine Translation, Pretraining and Transformers.
 
 
-### Text Generation - Markov Languages Models
+## Text Generation - Markov Languages Models
 Unigram and Bigram models, Back off model, linear_interpolation_smoothing.
 
 
-### Part-of-Speech Tagging - Hidden Markov Models
+## Part-of-Speech Tagging - Hidden Markov Models
 bigram HMM tagger, Viterbi algorithm, Add-one smoothing.
 
 
-### Sentiment Analysis - Log Linear Model, Word2Vec representation, LSTM model
+## Sentiment Analysis - Log Linear Model, Word2Vec representation, LSTM model
 Build 3 models - Simple Log Linear, Log Linear with Word2Vec and LSTM.
 On the Dataset of Sentiment Treebank by Stanford (movie reviews, and their sentiment value).
 
@@ -30,4 +30,10 @@ state of both directions of the bi-LSTM layer) – and concatenate them. Later, 
 concatenation through a linear layer and finally output the sigmoid of the result.
 
 
+## Transition-based Parsing - Maximum Spanning Tree Parser
+Implementing the MST (Maximum Spanning Tree) parser for unlabeled dependency parsing, using the perceptron algorithm and Inference using Chu-Liu-Edmonds algorithm.
 
+For the feature function components based on Words bigrams, we have a feature (value 1) for every two words with arc between them.
+For the feature function components based on POS tags bigrams, we use the part of speech tags given in the testset (save us running a POS tagger).
+The scoring function is defined to be the dot product of the feature function by a weight vector w.
+For Inference (computing the MST), we use the our modified version (max instead of min) of Chu-Liu-Edmonds algorithm.
